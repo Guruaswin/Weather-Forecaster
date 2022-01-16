@@ -1,43 +1,79 @@
-.App {
-  text-align: center;
+.navBar{
+  background-color: aqua;
+  height:40px;
+  width: 98%;
+  margin: 20px 20px;
+  border-radius: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftTab{
+  background-color: aqua;
+  width: 45%;
+  height: 600px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftTab_image{
+  height: 60%;
+  width: 98%;
+  margin: 6px 6px;
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leftTab_bottom{
+  background-color: cadetblue;
+  height: 200px;
+  width: 96%;
+  margin: 2% 2%;
+  border-radius: 10px;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.search{
+  position: absolute;
+  height: 25%;
+  width: 95%;
+  margin: 15px 10px;
+  background-color: black;
+  border-radius: 5px;
+  margin-block-end: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputBar{
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 80%;
+  height: 25px;
 }
-
-h1{
-  color: black;
-  font-size: 20px;
+.searchButton{
+  width: 80px;
+  height: 30px;
+  margin-left: 5px;
+}
+.city{
+  position: absolute;
+  height: 100px;
+  width: 90%;
+  margin: 80px 25px;
+  background-color: goldenrod;
+}
+.rightTab{
+  position: absolute;
+  background-color: aqua;
+  width: 52%;
+  height: 600px;
+  top: 80px;
+  left: 47%;
+  border-radius: 10px;
+}
+.rightTop{
+  height: 350px;
+  width: 96%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: chocolate;
+}
+.rightBottom{
+  height: 220px;
+  width: 96%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: crimson;
 }
