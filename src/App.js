@@ -5,7 +5,7 @@ import earth from './earth.jpg';
 function App() {
   return (
     <div className="App">
-      {/* <div className='firstPage'>
+      <div className='firstPage'>
         <div className='navBar'></div>
         <div className='leftTab'>
           <img src={earth} className='leftTab_image'/>
@@ -21,10 +21,9 @@ function App() {
           <div className='rightTop'></div>
           <div className='rightBottom'></div>
         </div>
-      </div> */}
-      <div className='FeedBack_Page'></div>
+      </div> 
+      {/* <div className='FeedBack_Page'></div> */}
     </div>
-
   );
 }
 
