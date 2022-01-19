@@ -21,9 +21,9 @@ function App() {
           <div className='rightTop'></div>
           <div className='rightBottom'></div>
         </div>
-      </div>
+      </div> 
+      {/* <div className='FeedBack_Page'></div> */}
     </div>
-
   );
 }
 
