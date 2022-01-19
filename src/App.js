@@ -3,6 +3,7 @@ import './App.css';
 // import earth from './earth.jpg';
 import earth2 from './earth2.jpg';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { CgProfile } from 'react-icons/cg';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           </div>
           <div className="navBar">
             <ul className='login'>Guest</ul>
+            <CgProfile className='profileLogo'/>
           </div>
         </div>
         <div className="bodySection">

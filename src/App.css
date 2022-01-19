@@ -108,16 +108,24 @@ body{
   width: 100%;
   height: 65px;
 }
+.profileLogo{
+  float: right;
+  margin: 15px 5px;
+  height: 30px;
+  width: 30px;
+}
 .login{
   float: right;
-  margin: 15px 70px;
+  margin: 15px 100px 15px 5px;
   font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
 }
 .bodySection{
   display: flex;
 }
 .leftTab{
-  background-color: rgb(32, 178, 134);
+  background-color: rgb(32, 178, 134, 0.5);
   height: 450px;
   width: 500px;
   margin: 20px 50px;
@@ -125,7 +133,7 @@ body{
 }
 .earthImage{
   width: 100%;
-  background-color: blue;
+  border-radius: 10px;
 }
 .searchCity{
   margin: 20px 30px;
@@ -146,7 +154,7 @@ body{
   border: none;
 }
 .rightTab{
-  background-color: rgb(32, 178, 134);
+  background-color: rgb(32, 178, 134, 0.5);
   height: 450px;
   width: 500px;
   margin: 20px 50px;
