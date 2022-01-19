@@ -22,7 +22,6 @@ function App() {
           <div className='rightBottom'></div>
         </div>
       </div> 
-      {/* <div className='FeedBack_Page'></div> */}
     </div>
   );
 }
