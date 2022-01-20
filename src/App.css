@@ -77,3 +77,39 @@
   border-radius: 10px;
   background-color: crimson;
 }
+/*
+For login page from line 83
+*/
+body{
+  background-color: cadetblue;
+}
+.hamBurger{
+  height: 40px;
+  width: 45px;
+  margin: 25px;
+  cursor: pointer;
+}
+.menuBar{
+  background-color:powderblue;
+  height: 100px;
+  width: 110px;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 5%;
+  display: block;
+}
+.CentreBox{
+  width: 450px;
+  height: 450px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  margin: 10px 500px;
+  border:none;
+  border-radius:20px;
+  background-color: teal;
+}
+.Continue{
+  height:40px;
+  width:400px;
+  border-radius: 5px;
+}
