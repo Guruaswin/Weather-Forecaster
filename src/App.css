@@ -102,14 +102,42 @@ body{
   height: 450px;
   padding-top: 20px;
   padding-left: 30px;
-  padding-right: 10px;
+  padding-right: 0px;
   margin: 10px 500px;
   border:none;
   border-radius:20px;
   background-color: teal;
 }
-.Continue{
-  height:40px;
+.Middle{
+  height:410px;
   width:400px;
-  border-radius: 5px;
+  margin: 9px 11px;
+  border-radius: 20px;
+  background-color: aliceblue;
 }
+.Google{
+  width: 99%;
+  height:40px;
+  border-radius: 20px;
+}
+.Or{
+  width: 40px;
+  height: 40px;
+  margin-right: 50%;
+  margin-left: 50%;
+  background-color: brown;
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.Mail{
+  width: 99%;
+  height:40px;
+  border-radius: 20px;
+}
+.Password{
+  width: 99%;
+  height:40px;
+  border-radius: 20px;
+}
+

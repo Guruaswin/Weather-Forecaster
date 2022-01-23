@@ -32,8 +32,13 @@ function App() {
       </div>
       {/*Main Box in the middle*/}
       <div className="CentreBox">
-        {/*Continue with google tab*/}
-        <input className="Continue" placeholder='Continue with Google?' type={Text}/>
+        {/*Common for all input boxes*/}
+        <div className='Middle'>
+          <input className="Google" placeholder='Continue with Google?' type={Text}/>
+          <div className="Or">Or</div>
+          <input className="Mail" placeholder='Enter Email' type={Text}/>
+          <input className="Password" type={'password'}/>
+        </div>
       </div>
     </div>
   );
