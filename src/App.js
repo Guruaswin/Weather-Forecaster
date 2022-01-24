@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import earth from './earth.jpg';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiHamburgerMenu} from 'react-icons/gi';
+import {GrClose} from 'react-icons/gr';
 
 function App() {
   return (
@@ -24,22 +25,30 @@ function App() {
         </div>
       </div>  */}
       {/*
-      For login page from line 29
+      For create account page from line 29
       */}
       <div className="menuBar">
             {/*Hamburger Icon*/}
-            <GiHamburgerMenu className='hamBurger'/>
+            {/* <GiHamburgerMenu className='hamBurger'/> */}
+            <div className='closeIcon'><GrClose className='GrClose'/></div>
+            {/*side menubar*/}
+            <div className='home'>
+               <h3>Home</h3>
+            </div>
+            <div className='settings'>
+               <h3>Settings</h3>
+            </div>
+            <div className='profile'>
+               <h3>Profile</h3>
+            </div>
+            <div className='favorites'>
+               <h3>Favorites</h3>
+            </div>
       </div>
-      {/*Main Box in the middle*/}
-      <div className="CentreBox">
-        {/*Common for all input boxes*/}
-        <div className='Middle'>
-          <input className="Google" placeholder='Continue with Google?' type={Text}/>
-          <div className="Or">Or</div>
-          <input className="Mail" placeholder='Enter Email' type={Text}/>
-          <input className="Password" type={'password'}/>
-        </div>
-      </div>
+      {/*Create Account left Box*/}
+      {/* <div className="LeftTab">
+        
+      </div> */}
     </div>
   );
 }

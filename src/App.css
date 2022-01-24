@@ -1,4 +1,4 @@
-.navBar{
+/* .navBar{
   background-color: aqua;
   height:40px;
   width: 98%;
@@ -76,68 +76,70 @@
   margin: 10px 10px;
   border-radius: 10px;
   background-color: crimson;
-}
+} */
 /*
-For login page from line 83
+For create account page from line 83
 */
 body{
   background-color: cadetblue;
 }
-.hamBurger{
+/* .hamBurger{
   height: 40px;
   width: 45px;
   margin: 25px;
   cursor: pointer;
-}
+} */
 .menuBar{
-  background-color:powderblue;
+  /* background-color:powderblue;
   height: 100px;
   width: 110px;
   border-bottom-right-radius: 40%;
   border-bottom-left-radius: 5%;
-  display: block;
-}
-.CentreBox{
-  width: 450px;
-  height: 450px;
-  padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 0px;
-  margin: 10px 500px;
-  border:none;
-  border-radius:20px;
-  background-color: teal;
-}
-.Middle{
-  height:410px;
-  width:400px;
-  margin: 9px 11px;
-  border-radius: 20px;
+  display: block; */
+  /*side menubar*/
+  height: 720px;
+  width: 200px;
   background-color: aliceblue;
 }
-.Google{
-  width: 99%;
-  height:40px;
-  border-radius: 20px;
-}
-.Or{
-  width: 40px;
-  height: 40px;
-  margin-right: 50%;
-  margin-left: 50%;
+/* .closeIcon{
+  height: 30px;
+  width: 35px;
+  margin: 25px;
+  cursor: pointer;
+  float: right;
+  display: flex;
+  align-items: flex-end;
+} */
+/* .LeftTab{
+  margin-top: 20px;
+  margin-left: 500px;
+  height: 550px;
+  width: 550px;
   background-color: brown;
-  font-size: large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ */
+ /* .menuContent{
+   /*Content within side menu bar*/
+   /* margin-block-start: 20px;
+  display: block;
+  height: 720px;
+  background-color:brown;
+  box-shadow: 2px 5px 8px 0 rgba(61, 29, 29, 0.54);
+  text-align: center;
+} */ */
+.home h3,.profile h3,.settings h3,.favorites h3,.closeIcon{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   text-align: center;
 }
-.Mail{
-  width: 99%;
-  height:40px;
-  border-radius: 20px;
+.closeIcon{
+  margin-left: 155px;
+  padding: 10px;
 }
-.Password{
-  width: 99%;
-  height:40px;
-  border-radius: 20px;
+.GrClose{
+  height:20px;
+  width: 25px;
 }
-
