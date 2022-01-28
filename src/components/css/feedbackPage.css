@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: darkslategray;
+  }
+  .topSection{
+    display: flex;
+  }
+  .menuBar{
+    background-color: crimson;
+    height: 100px;
+    width: 110px;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 5%;
+    display: block;
+  }
+  .hamBurger{
+    height: 40px;
+    width: 45px;
+    margin: 25px;
+    cursor: pointer;
+  }
+  .navBar{
+    background-color: burlywood;
+    width: 100%;
+    height: 65px;
+  }
+  .profileLogo{
+    float: right;
+    margin: 15px 5px;
+    height: 30px;
+    width: 30px;
+  }
+  .login{
+    float: right;
+    margin: 15px 100px 15px 5px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .feedbackForm{
+    background-color: rgb(75, 138, 138);
+    position: relative;
+    height: 500px;
+    width: 600px;
+    margin: 40px 350px;
+    border-radius: 10px;
+  }
+  .feedbackForm label{
+    position: absolute;
+    background-color: rgb(222, 231, 231);
+    font-size: 20px;  
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .inputFields{
+    position: absolute;
+    margin: 80px 60px;
+    width: 80%;
+  }
+  .inputFields .title{
+    background: none;
+    position: relative;
+    background-color: burlywood;
+    margin: 10px 180px;
+    padding: 5px 30px;
+  }
+  .inputFields .titleInput{
+    background-color: antiquewhite;
+    margin: 20px 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .inputFields .description{
+    background: none;
+    position: relative;
+    background-color: burlywood;
+    margin: 10px 150px;
+    padding: 5px 30px;
+  }
+  .inputFields .descriptionInput{
+    background-color: antiquewhite;
+    margin: 20px 5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .descriptionInput::placeholder{
+    color: black;
+  }
+  .inputFields button{
+    float: right;
+    margin: 0 10px;
+    padding: 8px 20px;
+  }
