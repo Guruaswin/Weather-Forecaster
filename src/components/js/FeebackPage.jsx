@@ -16,7 +16,7 @@ const FeedbackPage = () => {
                     <CgProfile className='profileLogo' />
                 </div>
             </div>
-            <form action="" className='feedbackForm'>
+            <form className='feedbackForm'>
                 <label>Feedback Form</label>
                 <div className="inputFields">
                     <label className='title'>Title</label>
