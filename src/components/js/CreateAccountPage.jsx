@@ -20,24 +20,24 @@ const CreateAccountPage = () => {
                 <h3>Create an account</h3>
                 <div className='createInputFields'>
                     <label>Name</label>
-                    <input type="text" />
+                    <input type='text' minLength={3} required/>
                     <label>Email</label>
-                    <input type="email" />
+                    <input type='email' required/>
                     <label>Password</label>
-                    <input type="password" />
+                    <input type='password' minLength={8} maxLength={20} required/>
                     <label>Confirm Password</label>
-                    <input type="password" />
+                    <input type='password' minLength={8} maxLength={20} required/>
                     <label>Mobile number</label>
-                    <input type="number" />
+                    <input type='text' maxLength={10} required/>
                     <label>City</label>
-                    <input type="text" />
+                    <input type='text' required/>
                     <label>Do you want to receive notification?</label>
                 </div>
                 <div className="notifications">
                     <label>Yes</label>
-                    <input type="checkbox" className='checkbox'/>
+                    <input type='checkbox' defaultChecked className='checkbox'/>
                     <label>No</label>
-                    <input type="checkbox" className='checkbox'/>
+                    <input type='checkbox' className='checkbox'/>
                 </div>
                 <button>Create</button>
                 <button>Cancel</button>

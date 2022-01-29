@@ -20,9 +20,9 @@ const FeedbackPage = () => {
                 <label>Feedback Form</label>
                 <div className="inputFields">
                     <label className='title'>Title</label>
-                    <input type="text" placeholder='Enter title' className='titleInput'/>
+                    <input type="text" placeholder='Enter title' className='titleInput' required/>
                     <label className='description'>Description</label>
-                    <textarea className='descriptionInput' placeholder='Enter description' cols="50" rows="10"></textarea>
+                    <textarea className='descriptionInput' placeholder='Enter description' cols="50" rows="10" required></textarea>
                     <button>Submit</button>
                     <button>Cancel</button>
                 </div>

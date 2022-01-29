@@ -20,8 +20,8 @@ const LoginPage = () => {
                 <a href="#" className='googleButton'>Continue with Google account</a>
                 <h4>Or</h4>
                 <div className='inputFields'>
-                    <input type="email" placeholder='Enter Email'/>
-                    <input type="password" placeholder='Enter Password'/>
+                    <input type="email" placeholder='Enter Email' />
+                    <input type="password" placeholder='Enter Password' />
                 </div>
                 <button className='loginButton'>Login</button>
                 <a href='#' className='createAccButton'>Create an account </a>
