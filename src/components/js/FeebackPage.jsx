@@ -18,7 +18,7 @@ const FeedbackPage = () => {
             </div>
             <form className='feedbackForm'>
                 <label>Feedback Form</label>
-                <div className="inputFields">
+                <div className="feedbackInputFields">
                     <label className='title'>Title</label>
                     <input type="text" placeholder='Enter title' className='titleInput' required/>
                     <label className='description'>Description</label>

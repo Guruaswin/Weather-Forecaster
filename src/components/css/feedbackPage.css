@@ -58,33 +58,33 @@
     text-align: center;
     border-radius: 5px;
   }
-  .inputFields{
+  .feedbackInputFields{
     position: absolute;
     margin: 80px 60px;
     width: 80%;
   }
-  .inputFields .title{
+  .feedbackInputFields .title{
     background: none;
     position: relative;
     background-color: burlywood;
     margin: 10px 180px;
     padding: 5px 30px;
   }
-  .inputFields .titleInput{
+  .feedbackInputFields .titleInput{
     background-color: antiquewhite;
     margin: 20px 10px;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
   }
-  .inputFields .description{
+  .feedbackInputFields .description{
     background: none;
     position: relative;
     background-color: burlywood;
     margin: 10px 150px;
     padding: 5px 30px;
   }
-  .inputFields .descriptionInput{
+  .feedbackInputFields .descriptionInput{
     background-color: antiquewhite;
     margin: 20px 5px;
     width: 100%;
@@ -94,7 +94,7 @@
   .descriptionInput::placeholder{
     color: black;
   }
-  .inputFields button{
+  .feedbackInputFields button{
     float: right;
     margin: 0 10px;
     padding: 8px 20px;

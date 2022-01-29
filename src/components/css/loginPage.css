@@ -61,14 +61,14 @@
   }
   .loginForm h4{
     position: absolute;
-    margin: 100px 200px;
+    margin: 110px 200px;
   }
-  .inputFields{
+  .loginInputFields{
     position: absolute;
     margin: 140px 60px;
     width: 70%;
   }
-  .inputFields input{
+  .loginInputFields input{
     position: relative;
     height: 30px;
     width: 100%;
@@ -79,7 +79,7 @@
     color: black;
     border-bottom: 1px solid rgb(69, 235, 235); 
   }
-  .inputFields input::placeholder{
+  .loginInputFields input::placeholder{
     color: black;
     size: 15px;
   }

@@ -19,7 +19,7 @@ const LoginPage = () => {
             <form className='loginForm'>
                 <a href="#" className='googleButton'>Continue with Google account</a>
                 <h4>Or</h4>
-                <div className='inputFields'>
+                <div className='loginInputFields'>
                     <input type="email" placeholder='Enter Email' />
                     <input type="password" placeholder='Enter Password' />
                 </div>
