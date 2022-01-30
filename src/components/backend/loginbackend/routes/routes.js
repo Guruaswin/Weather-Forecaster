@@ -6,7 +6,7 @@ const express=require("express")
 //importing or creating? router
 const router=express.Router()
 
-//importing or creating? schema from "models folder"
+//importing or creating? schema from "models" folder
 const loginTemplateCopy=require('../models/loginmodels')
 
 //only for posting requests from users at Login Page
@@ -21,7 +21,7 @@ router.post('/login',(request,response)=>{
         email:request.body.email,
         password:request.body.password
     })
-    logineduser.save()
+    loginuser.save()
     .then(data=>{
         response.json(data)
     })
