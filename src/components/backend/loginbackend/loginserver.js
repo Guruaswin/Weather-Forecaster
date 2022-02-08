@@ -29,4 +29,4 @@ App.use(cors())
 App.use('/App',routesUrls)
 
 //"App" is listening on port "4000" with a callback function message
-App.listen(4000, ()=> console.log("loginserver is up and running"))
+App.listen(3001, ()=> console.log("loginserver is up and running"))
