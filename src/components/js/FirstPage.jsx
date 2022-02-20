@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import earth2 from '../media/earth2.jpg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { CgProfile } from 'react-icons/cg';
+import Weather from '..\backend\firstpagebackend\Weather.js';
 
 const FirstPage = () => {
 
@@ -14,17 +15,17 @@ const FirstPage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const fetchData= async () => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-    });
-    await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
-      .then(res => res.json())
-      .then(result => {
-        setData(result)
-        console.log(result);
+    const fetchData = async () => {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        setLat(position.coords.latitude);
+        setLong(position.coords.longitude);
       });
+      await fetch(`${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`)
+        .then(res => res.json())
+        .then(result => {
+          setData(result)
+          console.log(result);
+        });
     }
     fetchData();
   }, [lat, long]);
@@ -52,7 +53,11 @@ const FirstPage = () => {
           </div>
         </div>
         <div className="rightTab">
-
+          {/* {(typeof data.main != 'undefined') ? (
+            <Weather weatherData={data} />
+          ) : (
+            <div></div>
+          )} */}
         </div>
       </div>
     </div>
