@@ -1,15 +1,14 @@
-import React from 'react';
-import '../css/loginPage.css';
+import React from "react";
+import "../css/sideBar.css";
 
 import Logo from '../media/websiteLogo.png';
 import { BiHomeAlt, BiChevronUp, BiChevronDown } from 'react-icons/bi';
 import { IoMdSettings } from 'react-icons/io';
 import { CgProfile } from 'react-icons/cg';
-import { Link } from 'react-router-dom';
 
+var menuDown = document.getElementById('menuDown');
 
-
-const LoginPage = () => {
+const SideBar = () => {
     const toggle = (e) => {
         var dropdownMenu = document.getElementById('dropdownMenu');
         console.log(dropdownMenu);
@@ -20,8 +19,8 @@ const LoginPage = () => {
         }
     }
 
-    return(
-        <div className='loginPage'>
+    return (
+        <div className="sideBar">
             <div className="navBar">
                 <img src={Logo} alt="" className="websiteLogo"/>
                 <h4 className="websiteName">Weather Forecaster</h4>
@@ -29,32 +28,35 @@ const LoginPage = () => {
                     <CgProfile className="profileLogo"/>
                     <a className="navbarItems">Guest</a>
                     <a className="navbarItems">Menu</a>
-                    <BiChevronUp className="menuIcon menuUp" id="menuUp" />
+                    <BiChevronUp className="menuIcon menuUp " id="menuUp" />
                     <BiChevronDown className="menuIcon menuDown" id="menuDown" onClick={toggle} />
                     <div className="dropdownMenu hidden" id="dropdownMenu">
                         <div className="home borderLine displayContents">
                             <BiHomeAlt className="homeIcon icon" />
-                            <Link to={"/home"} className="list">Home</Link>
+                            <a className="list">Home</a>
                         </div>
                         <div className="settings borderLine displayContents">
                             <IoMdSettings className="settingsIcon icon" />
-                            <Link to={"/login"} className="list">Login</Link>
+                            <a className="list">Settings</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <form className='loginForm'>
-                <a href="#" className='googleButton'>Continue with Google account</a>
-                <h4>Or</h4>
-                <div className='loginInputFields'>
-                    <input type="email" placeholder='Enter Email' />
-                    <input type="password" placeholder='Enter Password' />
-                </div>
-                <button className='loginButton'>Login</button>
-                <Link to={"/createAccount"} className="createAccButton">Create an Account</Link>
-            </form>
+            <div className="description">
+                <h3>Weather Forecaster</h3>
+                <p>
+                    This website provides the weather forecast of any particular location.<br/>
+                    It also sends you the forecast on regular intervals
+                </p>
+            </div>
+            <div className="hello1"></div>
+            <div className="hello2"></div>
+            <div className="footerBar">
+                <a href="">Like to give a feedback?</a>
+                <a href="">Mail us at - weatherforecaster@gmail.com</a>
+            </div>
         </div>
     );
-}
+};
 
-export default LoginPage;
+export default SideBar;

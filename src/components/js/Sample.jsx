@@ -1,5 +1,12 @@
-import React from 'react';
-import '../css/loginPage.css';
+import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { Earth } from "./Earth";
+
+import LoginPage from "./LoginPage";
+
+import React from "react";
+import "../css/sideBar.css";
 
 import Logo from '../media/websiteLogo.png';
 import { BiHomeAlt, BiChevronUp, BiChevronDown } from 'react-icons/bi';
@@ -7,9 +14,19 @@ import { IoMdSettings } from 'react-icons/io';
 import { CgProfile } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 
+var menuDown = document.getElementById('menuDown');
+
+const CanvasContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opaciy: 0.2;
+  top: 240px;
+  z-index: 0;
+`;
 
 
-const LoginPage = () => {
+const Sample = () => {
     const toggle = (e) => {
         var dropdownMenu = document.getElementById('dropdownMenu');
         console.log(dropdownMenu);
@@ -20,8 +37,8 @@ const LoginPage = () => {
         }
     }
 
-    return(
-        <div className='loginPage'>
+    return (
+        <div className="sideBar">
             <div className="navBar">
                 <img src={Logo} alt="" className="websiteLogo"/>
                 <h4 className="websiteName">Weather Forecaster</h4>
@@ -43,18 +60,27 @@ const LoginPage = () => {
                     </div>
                 </div>
             </div>
-            <form className='loginForm'>
-                <a href="#" className='googleButton'>Continue with Google account</a>
-                <h4>Or</h4>
-                <div className='loginInputFields'>
-                    <input type="email" placeholder='Enter Email' />
-                    <input type="password" placeholder='Enter Password' />
-                </div>
-                <button className='loginButton'>Login</button>
-                <Link to={"/createAccount"} className="createAccButton">Create an Account</Link>
-            </form>
+            {/* <CanvasContainer>
+                <Canvas>
+                    <Suspense fallback={null}>
+                        <Earth />
+                    </Suspense>
+                </Canvas> 
+            </CanvasContainer> */}
+            <div className="description">
+                <h3>Weather Forecaster</h3>
+                <p>
+                    This website provides the weather forecast of any particular location.<br/>
+                    It also sends you the forecast on regular intervals
+                </p>
+            </div>
+            <div className="hello1"></div>
+            <div className="footerBar">
+                <Link to={"/feedback"}>Like to give a feedback?</Link>
+                <a href="">Mail us at - weatherforecaster@gmail.com</a>
+            </div>
         </div>
     );
-}
+};
 
-export default LoginPage;
+export default Sample;
