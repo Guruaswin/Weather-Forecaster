@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar section */
+.navBar{
+    background-color: blue;
+    width: 90%;
+    margin: 0 60px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+.websiteLogo{
+    height: 40px;
+    width: 40px;
+    margin: 15px 15px 15px 30px;
+}
+.websiteName{
+    font-weight: 600;
+    font-size: 18px;
+}
+.navBarContents{
+    position: absolute;
+    right: 30px;
+    padding: 30px;
+    display: flex;
+}
+.navBarContents a{
+    padding: 20px 20px 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.navbarItems{
+    color: aliceblue;
+}
+.profileLogo{
+    height: 60px;
+    width: 30px;
+    padding: 0;
+}
+.menuIcon{
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    visibility: visible;
+}
+.menuUp, .hidden{
+    visibility: hidden;
+}
+
+
+/* Drop dowm menu */
+.dropdownMenu{
+    position: fixed;
+    top: 66px;
+    width: 190px;
+    background-color: blue;
+    padding: 0 10px 10px;
+    z-index: 20;
+}
+.icon{
+    margin: 10px 15px 10px 5px;
+    height: 30px;
+    width: 20px;
+    cursor: pointer;
+}
+.list{
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: aliceblue;
+}
+.dropdownMenu a{
+    padding: 0;
+}
+.menuIcon:hover,.list:hover{
+    box-shadow: 0 0 5px rgb(70, 62, 62);
+    padding: 5px;
+}
+.borderLine{
+    border-bottom: 2px solid white;
+    margin: 10px 0 20px;
+}
+.borderLine:hover{
+    border-bottom: 2px solid black;
+    transition: .4s ease;
+}
+.displayContents{
+    display: flex;
+    align-items: center;
+}
+
+/* Description */
+.description{
+    text-align: center;
+    margin: 70px 50px;
+    width: 90%;
+    color: white;
+    font-family: cursive;
+}
+.description h3{
+    font-size: 22px;
+    margin: 10px;
+}
+.description p{
+    margin: 15px;
+    font-size: 20px;
+}
+
+.hello1{
+    position: relative;
+    height: 600px;
+    background-color: aliceblue;
+    justify-content: center;
+    margin: 430px 60px 30px;
+    width: 90%;
+}
+
+/* Footer section */
+.footerBar{
+    height: 80px;
+    width: 90%;
+    margin-left: 60px;
+    background-color: blue;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.footerBar a{
+    color: aliceblue;
+    margin: 30px 160px;
+    text-decoration: none;
+}
+.footerBar a:hover{
+    border-bottom: 1px dotted aliceblue ;
+}
+
+.pageHide{
+    visibility: hidden;
+}

@@ -1,103 +1,162 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body{
-    background-color: darkslategray;
-  }
-  .topSection{
-    display: flex;
-  }
-  .menuBar{
-    background-color: crimson;
-    height: 100px;
-    width: 110px;
-    border-bottom-right-radius: 40%;
-    border-bottom-left-radius: 5%;
-    display: block;
-  }
-  .hamBurger{
-    height: 40px;
-    width: 45px;
-    margin: 25px;
-    cursor: pointer;
-  }
-  .navBar{
-    background-color: burlywood;
-    width: 100%;
-    height: 65px;
-  }
-  .profileLogo{
-    float: right;
-    margin: 15px 5px;
-    height: 30px;
-    width: 30px;
-  }
-  .login{
-    float: right;
-    margin: 15px 100px 15px 5px;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .loginForm{
-    background-color: rgb(75, 138, 138);
-    position: relative;
-    height: 450px;
-    width: 450px;
-    margin: 50px 400px;
-    border-radius: 10px;
-  }
-  .loginForm .googleButton{
-    background-color: rgb(222, 231, 231);
-    position: absolute;
-    padding: 15px;
-    margin: 30px 60px;
-    width: 70%;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  .loginForm h4{
-    position: absolute;
-    margin: 110px 200px;
-  }
-  .loginInputFields{
-    position: absolute;
-    margin: 140px 60px;
-    width: 70%;
-  }
-  .loginInputFields input{
-    position: relative;
-    height: 30px;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0  ;
-    background: none;
-    border: none;
-    color: black;
-    border-bottom: 1px solid rgb(69, 235, 235); 
-  }
-  .loginInputFields input::placeholder{
-    color: black;
-    size: 15px;
-  }
-  .loginButton{
-    background-color: rgb(222, 231, 231);
-    position: absolute;
-    margin: 300px 165px;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: none;
-  }
-  .loginForm .createAccButton{
-    background-color: rgb(222, 231, 231);
-    position: absolute;
-    padding: 15px;
-    margin: 360px 60px 0;
-    width: 70%;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar section */
+.navBar {
+  background-color: blue;
+  width: 90%;
+  margin: 0 60px;
+  display: flex;
+  position: sticky;
+  align-items: center;
+}
+.websiteLogo {
+  height: 40px;
+  width: 40px;
+  margin: 15px 15px 15px 30px;
+}
+.websiteName {
+  font-weight: 600;
+  font-size: 18px;
+}
+.navBarContents {
+  position: absolute;
+  right: 30px;
+  padding: 30px;
+  display: flex;
+}
+.navBarContents a {
+  padding: 20px 20px 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.navbarItems {
+  color: aliceblue;
+}
+.profileLogo {
+  height: 60px;
+  width: 30px;
+  padding: 0;
+}
+.menuIcon {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  visibility: visible;
+}
+.menuUp,
+.hidden {
+  visibility: hidden;
+}
+
+/* Drop dowm menu */
+.dropdownMenu {
+  position: fixed;
+  top: 66px;
+  width: 190px;
+  background-color: blue;
+  padding: 0 10px 10px;
+  z-index: 20;
+}
+.icon {
+  margin: 10px 15px 10px 5px;
+  height: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: aliceblue;
+}
+.dropdownMenu a {
+  padding: 0;
+}
+.menuIcon:hover,
+.list:hover {
+  box-shadow: 0 0 5px rgb(70, 62, 62);
+  padding: 5px;
+}
+.borderLine {
+  border-bottom: 2px solid white;
+  margin: 10px 0 20px;
+}
+.borderLine:hover {
+  border-bottom: 2px solid black;
+  transition: 0.4s ease;
+}
+.displayContents {
+  display: flex;
+  align-items: center;
+}
+
+/* Login Bar */
+.loginForm {
+  background-color: rgb(107, 107, 109);
+  position: relative;
+  height: 450px;
+  width: 480px;
+  margin: 80px 400px;
+  border-radius: 10px;
+}
+.loginForm .googleButton {
+  background-color: rgb(222, 231, 231);
+  position: absolute;
+  padding: 15px;
+  margin: 30px 60px;
+  width: 75%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.loginForm h4 {
+  position: absolute;
+  margin: 110px 230px;
+}
+.loginInputFields {
+  position: absolute;
+  margin: 140px 60px;
+  width: 75%;
+}
+.loginInputFields input {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background: none;
+  border: none;
+  color: black;
+  border-bottom: 1px solid rgb(69, 235, 235);
+}
+.loginInputFields input::placeholder {
+  color: black;
+  size: 15px;
+}
+.loginButton {
+  background-color: rgb(222, 231, 231);
+  position: absolute;
+  margin: 300px 190px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.loginForm .createAccButton {
+  background-color: rgb(222, 231, 231);
+  position: absolute;
+  padding: 15px;
+  margin: 360px 80px 0;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: black;
+}
