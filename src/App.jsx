@@ -9,6 +9,7 @@ import SideBar from "./components/js/SideBar";
 import Sample from "./components/js/Sample";
 import FeedbackPage from "./components/js/FeebackPage";
 import CreateAccountPage from "./components/js/CreateAccountPage";
+import Weather from "./components/backend/firstpagebackend/Weather";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const CanvasContainer = styled.div`
@@ -28,8 +29,10 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/createAccount" element={<CreateAccountPage />} />
         <Route path="/feedback" element={<FeedbackPage />} />
+        <Route path="/Weather" element={<Weather />} />
       </Routes>
     </BrowserRouter>
+    // <Weather />
     // <>
     // {/* <Sample /> */}
     // <LoginPage />

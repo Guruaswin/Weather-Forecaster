@@ -60,13 +60,13 @@ const Sample = () => {
                     </div>
                 </div>
             </div>
-            {/* <CanvasContainer>
+            <CanvasContainer>
                 <Canvas>
                     <Suspense fallback={null}>
                         <Earth />
                     </Suspense>
                 </Canvas> 
-            </CanvasContainer> */}
+            </CanvasContainer>
             <div className="description">
                 <h3>Weather Forecaster</h3>
                 <p>
