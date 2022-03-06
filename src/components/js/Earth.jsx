@@ -18,12 +18,12 @@ export function Earth(props) {
   const earthRef = useRef();
   const cloudsRef = useRef();
 
-  // useFrame(({ clock }) => {
-  //   const elapsedTime = clock.getElapsedTime();
+  useFrame(({ clock }) => {
+    const elapsedTime = clock.getElapsedTime();
 
-  //   earthRef.current.rotation.y = elapsedTime / 6;
-  //   cloudsRef.current.rotation.y = elapsedTime / 6;
-  // });
+    earthRef.current.rotation.y = elapsedTime / 6;
+    cloudsRef.current.rotation.y = elapsedTime / 6;
+  });
 
   return (
     <>
