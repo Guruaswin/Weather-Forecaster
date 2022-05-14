@@ -6,10 +6,10 @@ import CreateAccountPage from './components/js/CreateAccountPage';
 const App = () => {
   return (
     <>
-      {/* <FirstPage /> */}
+       <FirstPage /> 
       {/* <LoginPage /> */}
       {/* <FeedBack /> */}
-      <CreateAccountPage />
+      {/* <CreateAccountPage /> */}
     </>
   );
 }
